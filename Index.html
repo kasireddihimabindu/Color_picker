@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Image Color picker </title>
+<link rel="stylesheet" href="style.css">
+<h1 class="heading"> Image Color Picker</h1>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="image">
+            <img decoding="async" id="image" src="./images/horse.jpg" />
+        </div>
+        <div class="btns.container">
+            <input type="file" id="file" accesskey="image/*">
+            <label for="file">Open a image</label>
+            <button class="pick"> Pick a Color</button>
+        </div>
+        <div id="result" class="hide">
+            <div>
+                <input type="text" id="hex-valref"/>
+                <button onclick="copy('hex-valref')">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+            <div>
+                <input type="text" id="rgb-val-ref" />
+                <button onclick="copy('rgb-val-ref')">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+            <div id="picked-color-ref"></div>
+        </div>   
+        <div id="custom-alert">Color Code Copied!</div>
+    </div>
+</body>
+</html>
